@@ -1,0 +1,238 @@
+.mybookings-page {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 32px 16px;
+  /* margin: 0px 8px; */
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .mybookings-page {
+    padding: 40px 32px;
+    margin: 0px 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mybookings-page {
+    padding: 48px 120px;
+  }
+}
+
+.mybookings-section {
+  margin-bottom: 64px;
+}
+
+.mybookings-heading {
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .mybookings-heading {
+    font-size: 1.5rem;
+  }
+}
+
+.mybookings-message {
+  text-align: center;
+  color: #6b7280;
+}
+
+.mybookings-empty {
+  color: #6b7280;
+}
+
+.mybookings-error {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 12px;
+  color: #b91c1c;
+  padding: 16px;
+}
+
+.booking-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 640px) {
+  .booking-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .booking-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.booking-card {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #f3f4f6;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 320px;
+}
+
+.booking-card--upcoming,
+.booking-card--past {
+  max-width: 100%;
+}
+
+.booking-card__badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 4px 10px rgba(16, 24, 40, 0.04);
+}
+
+.booking-card__badge-icon--plane {
+  color: #2563eb;
+}
+
+.booking-card__badge-icon--train {
+  color: #16a34a;
+}
+
+.booking-card__meta {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.booking-card__meta-value {
+  font-weight: 500;
+  color: #374151;
+}
+
+.booking-card__status {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 999px;
+  width: fit-content;
+  margin-bottom: 16px;
+}
+
+.booking-card__status--upcoming {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+
+.booking-card__status--completed {
+  background-color: #ecfdf5;
+  color: #16a34a;
+}
+
+.booking-card__route {
+  display: flex;
+  align-items: center;
+  color: #1f2937;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.booking-card__route-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  color: #4b5563;
+}
+
+.booking-card__info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 4px;
+}
+
+@media (min-width: 768px) {
+  .booking-card__info {
+    font-size: 15px;
+  }
+}
+
+.booking-card__info-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  color: #6b7280;
+}
+
+.booking-card__text {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 12px;
+}
+
+.booking-card__footer {
+  margin-top: auto;
+}
+
+.booking-card__gradient {
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-card__gradient--upcoming {
+  height: 64px;
+  background: linear-gradient(90deg, rgba(235, 245, 255, 1) 0%, rgba(214, 231, 255, 1) 100%);
+  box-shadow: inset 0 -6px 14px rgba(99, 102, 241, 0.03);
+}
+
+.booking-card__gradient--past {
+  height: 56px;
+  background: linear-gradient(90deg, rgba(240, 253, 244, 1) 0%, rgba(221, 247, 229, 1) 100%);
+  box-shadow: inset 0 -6px 14px rgba(16, 185, 129, 0.02);
+}
+
+.booking-card__footer-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-card__footer-icon--plane {
+  color: #2563eb;
+}
+
+.booking-card__footer-icon--train {
+  color: #16a34a;
+}
+
+.payment-status--unpaid {
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.payment-status--paid {
+  color: #16a34a;
+  font-weight: 500;
+}
