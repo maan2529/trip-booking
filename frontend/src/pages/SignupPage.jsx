@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Eye, EyeOff, Mail, Plane, User } from "lucide-react";
+import { Eye, EyeOff, Mail, User } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { TourContext } from "../context/TourBookingContext";
@@ -117,7 +117,7 @@ const SignupPage = () => {
       <div className="flex flex-col justify-between w-full max-w-md p-9 text-center bg-white rounded-3xl shadow-xl min-h-[700px]">
         <div className="flex justify-center mb-7">
           <div className="p-4 text-white bg-blue-600 rounded-full shadow-md">
-            <Plane size={28} />
+            <img src="/plane.png" alt="plane" className="w-10 h-10 object-contain" />
           </div>
         </div>
 
@@ -245,7 +245,7 @@ const SignupPage = () => {
         <div className="mt-7 text-sm text-gray-600">
           Already have an account?{" "}
           <button
-            onClick={() => location?.state?.user === "admin" ? navigate("/", { state: { user: "admin" } }) : navigate("/")}
+            onClick={() => location?.state?.user === "admin" ? navigate("/login", { state: { user: "admin" } }) : navigate("/")}
             className="font-medium cursor-pointer text-blue-600 hover:underline"
           >
             Log In

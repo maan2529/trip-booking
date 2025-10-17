@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Eye, EyeOff, Mail, Plane } from "lucide-react";
+import { Eye, EyeOff, Mail } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -61,7 +61,7 @@ const LoginPage = () => {
       <div className="flex flex-col justify-between w-full max-w-md p-9 text-center bg-white rounded-3xl shadow-xl min-h-[620px]">
         <div className="flex justify-center mb-7">
           <div className="p-4 text-white bg-blue-600 rounded-full shadow-md">
-            <Plane size={29} />
+            <img src="/plane.png" alt="plane" className="w-10 h-10 object-contain" />
           </div>
         </div>
 

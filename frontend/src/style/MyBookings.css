@@ -104,8 +104,11 @@
   box-shadow: 0 4px 10px rgba(16, 24, 40, 0.04);
 }
 
-.booking-card__badge-icon--plane {
-  color: #2563eb;
+
+.booking-card__badge-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 .booking-card__badge-icon--train {
@@ -219,8 +222,10 @@
   justify-content: center;
 }
 
-.booking-card__footer-icon--plane {
-  color: #2563eb;
+.booking-card__footer-icon-image {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
 .booking-card__footer-icon--train {

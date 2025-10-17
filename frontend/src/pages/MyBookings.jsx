@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Plane, Train, Calendar, Clock, MapPin } from "lucide-react";
+import { Train, Calendar, Clock, MapPin } from "lucide-react";
 import axiosInstance from "../axios/axios";
 import "../style/MyBookings.css";
 import { formatSeats } from "../utils/formatSeats";
@@ -90,7 +90,7 @@ const MyBookings = () => {
                 className="booking-card booking-card--upcoming"
               >
                 <div className="booking-card__badge">
-                  <Plane size={16} className="booking-card__badge-icon--plane" />
+                  <img src="/plane.png" alt="plane" className="booking-card__badge-icon" />
                 </div>
 
                 <div className="mb-[8px]">
@@ -133,7 +133,7 @@ const MyBookings = () => {
                 <div className="booking-card__footer">
                   <div className="booking-card__gradient booking-card__gradient--upcoming">
                     <div className="booking-card__footer-icon booking-card__footer-icon--plane">
-                      <Plane size={28} />
+                      <img src="/plane.png" alt="plane" className="booking-card__footer-icon-image" />
                     </div>
                   </div>
                 </div>

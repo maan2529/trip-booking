@@ -13,7 +13,7 @@ const ProfilePage = () => {
             <div className="text-center pt-14">
                 <div className="relative inline-block">
                     <img
-                        src="https://images.unsplash.com/photo-1618641986557-1ecd230959aa?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src="https://i.pravatar.cc/40"
                         alt="Profile"
                         className="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-2 border-blue-500 object-cover mx-auto"
                     />
@@ -72,7 +72,7 @@ const ProfilePage = () => {
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
                         <div>
                             <p className="text-sm text-gray-500">Phone number</p>
-                            <p className="font-medium mt-1">+91 99999 99999</p>
+                            <p className="font-medium mt-1">+91 8446164476</p>
                         </div>
                         <button className="self-start sm:self-auto flex items-center gap-1 border border-blue-600 text-blue-600 px-3 py-1.5 rounded-md text-sm hover:bg-blue-50 transition">
                             <Pencil size={14} />
@@ -84,7 +84,7 @@ const ProfilePage = () => {
                         <div>
                             <p className="text-sm text-gray-500">Address</p>
                             <p className="font-medium mt-1">
-                                St 32 main downtown, Los Angeles, California, USA
+                                indrapuri, bhopal, MP
                             </p>
                         </div>
                         <button className="self-start sm:self-auto flex items-center gap-1 border border-blue-600 text-blue-600 px-3 py-1.5 rounded-md text-sm hover:bg-blue-50 transition">
@@ -95,7 +95,7 @@ const ProfilePage = () => {
 
                     <div>
                         <p className="text-sm text-gray-500">Date of birth</p>
-                        <p className="font-medium mt-1">01-01-1992</p>
+                        <p className="font-medium mt-1">29-02-1991</p>
                     </div>
                 </div>
             </div>
