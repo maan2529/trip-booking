@@ -1,5 +1,5 @@
 # PSQURE Travel Platform
-
+## Demo Link - https://trip-booking-x1lh.onrender.com
 ## Overview
 
 Full-stack travel booking application built with a React + Vite frontend and an Express/MongoDB backend. Features include user authentication, trip search, seat selection, booking management, ticket viewing/downloading, and an admin dashboard for trip oversight.
